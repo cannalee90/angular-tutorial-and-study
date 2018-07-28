@@ -1,0 +1,8 @@
+<p>
+  {{title}}
+  <img src="{{currentHero.imgUrl}}" style="height:300px">
+  <span [hidden]="isUnchanged">changed</span>
+</p>
+
+<div *ngFor="let hero of heroes">{{hero.name}}</div>
+<input #heroInput> {{heroInput.value}}
